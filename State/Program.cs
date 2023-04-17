@@ -70,22 +70,118 @@ class OnState : ComputerState
 
 internal class Program
 {
+    //static void Main(string[] args)
+    //{
+    //    /*
+    //       Aynı Power fonksiyonunun, mevcut durumu kaale alarak
+    //       farklı bir davranışı yerine getirmesini izleyelim. 
+    //     */
+
+    //    MyComputer computer = new MyComputer(); //kapalı durumda
+    //    computer.Power(); //açık konuma geçti
+    //    computer.Power(); //kapalı konuma geçti
+
+    //}
+    ///* ÇIKTI:
+    //   Bilgisayar açıldı!
+    //   Bilgisayar kapandı!
+    // */
+
     static void Main(string[] args)
     {
-        /*
-           Aynı Power fonksiyonunun, mevcut durumu kaale alarak
-           farklı bir davranışı yerine getirmesini izleyelim. 
-         */
 
-        MyComputer computer = new MyComputer(); //kapalı durumda
-        computer.Power(); //açık konuma geçti
-        computer.Power(); //kapalı konuma geçti
+        DriveModeFactory factory = new DriveModeFactory();
+        Car bmw = new Car();
+        bmw.StepOnTheGas();
+
+        bmw.State = factory.Create(Gears.R);
+        bmw.StepOnTheGas();
+
+        bmw.State = factory.Create(Gears.D);
+        bmw.StepOnTheGas();
 
     }
     /* ÇIKTI:
-       Bilgisayar açıldı!
-       Bilgisayar kapandı!
+       Araç park modunda.
+       Araç geriye doğru gidiyor.
+       Araç ileriye doğru gidiyor.
      */
-
 }
 //}
+
+
+abstract class DriveMode
+{
+    public abstract void Handle(Car car);
+}
+
+class Drive : DriveMode
+{
+    public override void Handle(Car car)
+    {
+        //D modundayken gaza basılırsa araç ilerler.
+        Console.WriteLine("Araç ileriye doğru gidiyor.");
+    }
+}
+
+class Reverse : DriveMode
+{
+    public override void Handle(Car car)
+    {
+        //R modundayken gaza basılırsa araç geri gider.
+        Console.WriteLine("Araç geriye doğru gidiyor.");
+    }
+}
+
+class Park : DriveMode
+{
+    public override void Handle(Car car)
+    {
+        //P modundayken gaza basılırsa araç ilerlemez.
+        Console.WriteLine("Araç park modunda.");
+    }
+}
+
+class Neutral : DriveMode
+{
+    public override void Handle(Car car)
+    {
+        //N modundayken gaza basılırsa araç ilerlemez.
+        Console.WriteLine("Araç boşta.");
+    }
+}
+
+enum Gears
+{
+    P, R, N, D
+}
+
+class DriveModeFactory
+{
+    public DriveMode Create(Gears gears)
+    {   //Bkz. Factory Method (Factory) pattern.
+        switch (gears)
+        {
+            case Gears.P: return new Park();
+            case Gears.R: return new Reverse();
+            case Gears.N: return new Neutral();
+            default: case Gears.D: return new Drive();
+        }
+    }
+}
+
+
+class Car
+{
+    public Car()
+    {
+        State = new Park();
+    }
+
+    public DriveMode State { get; set; }
+
+    public void StepOnTheGas()
+    {
+        State.Handle(this);
+    }
+}
