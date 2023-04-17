@@ -15,11 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State", "State\State.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interpreter", "Interpreter\Interpreter.csproj", "{9BFD6377-3302-4CDA-BF45-1AF812FD5670}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterator.csproj", "{74CDD96D-EFE3-4A27-A904-565347B03D72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iterator", "Iterator\Iterator.csproj", "{74CDD96D-EFE3-4A27-A904-565347B03D72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "Mediator\Mediator.csproj", "{BFD03016-D1E0-4E90-BC75-BA902B54DAC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mediator", "Mediator\Mediator.csproj", "{BFD03016-D1E0-4E90-BC75-BA902B54DAC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento", "Memento\Memento.csproj", "{D577C83E-4D35-4185-B9AA-39116456B64C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memento", "Memento\Memento.csproj", "{D577C83E-4D35-4185-B9AA-39116456B64C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{5B112C62-8D9F-4D2F-9F46-3F10D2D24100}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{D577C83E-4D35-4185-B9AA-39116456B64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D577C83E-4D35-4185-B9AA-39116456B64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D577C83E-4D35-4185-B9AA-39116456B64C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B112C62-8D9F-4D2F-9F46-3F10D2D24100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B112C62-8D9F-4D2F-9F46-3F10D2D24100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B112C62-8D9F-4D2F-9F46-3F10D2D24100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B112C62-8D9F-4D2F-9F46-3F10D2D24100}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +74,7 @@ Global
 		{74CDD96D-EFE3-4A27-A904-565347B03D72} = {BF222515-45EC-4334-BDBD-EAADCB65178E}
 		{BFD03016-D1E0-4E90-BC75-BA902B54DAC2} = {BF222515-45EC-4334-BDBD-EAADCB65178E}
 		{D577C83E-4D35-4185-B9AA-39116456B64C} = {BF222515-45EC-4334-BDBD-EAADCB65178E}
+		{5B112C62-8D9F-4D2F-9F46-3F10D2D24100} = {BF222515-45EC-4334-BDBD-EAADCB65178E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FCEAD149-72F3-447C-AF3D-8524EE5A69B3}
