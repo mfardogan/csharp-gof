@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{CA514711-490B-4855-ACE4-87579A14440B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{44A4EBE9-CE44-436D-9C4C-DCC455316F6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{CA514711-490B-4855-ACE4-87579A14440B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA514711-490B-4855-ACE4-87579A14440B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA514711-490B-4855-ACE4-87579A14440B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44A4EBE9-CE44-436D-9C4C-DCC455316F6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44A4EBE9-CE44-436D-9C4C-DCC455316F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44A4EBE9-CE44-436D-9C4C-DCC455316F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44A4EBE9-CE44-436D-9C4C-DCC455316F6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +88,7 @@ Global
 		{D577C83E-4D35-4185-B9AA-39116456B64C} = {BF222515-45EC-4334-BDBD-EAADCB65178E}
 		{5B112C62-8D9F-4D2F-9F46-3F10D2D24100} = {BF222515-45EC-4334-BDBD-EAADCB65178E}
 		{CA514711-490B-4855-ACE4-87579A14440B} = {BF222515-45EC-4334-BDBD-EAADCB65178E}
+		{44A4EBE9-CE44-436D-9C4C-DCC455316F6F} = {BF222515-45EC-4334-BDBD-EAADCB65178E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FCEAD149-72F3-447C-AF3D-8524EE5A69B3}
