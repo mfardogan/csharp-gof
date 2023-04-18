@@ -21,13 +21,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mediator", "Mediator\Mediat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memento", "Memento\Memento.csproj", "{D577C83E-4D35-4185-B9AA-39116456B64C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{5B112C62-8D9F-4D2F-9F46-3F10D2D24100}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Observer", "Observer\Observer.csproj", "{5B112C62-8D9F-4D2F-9F46-3F10D2D24100}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{CA514711-490B-4855-ACE4-87579A14440B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "Strategy\Strategy.csproj", "{CA514711-490B-4855-ACE4-87579A14440B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{44A4EBE9-CE44-436D-9C4C-DCC455316F6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{44A4EBE9-CE44-436D-9C4C-DCC455316F6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.csproj", "{D2B9107E-6491-4E9A-990A-CE1FE0C885EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visitor", "Visitor\Visitor.csproj", "{D2B9107E-6491-4E9A-990A-CE1FE0C885EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "creational", "creational", "{4917E795-06A5-4DAB-AF49-BBE727F2281B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{687FF7AC-A350-479D-80A3-BEEF5C37FEBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +83,10 @@ Global
 		{D2B9107E-6491-4E9A-990A-CE1FE0C885EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2B9107E-6491-4E9A-990A-CE1FE0C885EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2B9107E-6491-4E9A-990A-CE1FE0C885EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{687FF7AC-A350-479D-80A3-BEEF5C37FEBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{687FF7AC-A350-479D-80A3-BEEF5C37FEBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{687FF7AC-A350-479D-80A3-BEEF5C37FEBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{687FF7AC-A350-479D-80A3-BEEF5C37FEBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +104,8 @@ Global
 		{CA514711-490B-4855-ACE4-87579A14440B} = {BF222515-45EC-4334-BDBD-EAADCB65178E}
 		{44A4EBE9-CE44-436D-9C4C-DCC455316F6F} = {BF222515-45EC-4334-BDBD-EAADCB65178E}
 		{D2B9107E-6491-4E9A-990A-CE1FE0C885EE} = {BF222515-45EC-4334-BDBD-EAADCB65178E}
+		{4917E795-06A5-4DAB-AF49-BBE727F2281B} = {1153E4FC-5F9D-4E21-9475-637DD765A1CF}
+		{687FF7AC-A350-479D-80A3-BEEF5C37FEBF} = {4917E795-06A5-4DAB-AF49-BBE727F2281B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FCEAD149-72F3-447C-AF3D-8524EE5A69B3}
