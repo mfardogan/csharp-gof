@@ -4,11 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Drink drink = new Tea();
-            drink.Prepare();
+            Automat automat = new Automat();
+            Drink tea = automat.Prepare(DrinkType.Tea);
+            Drink coffee = automat.Prepare(DrinkType.Coffee);
         }
         /* ÇIKTI:
-           Ana malzeme eklendi.
+           Ana malzeme (çay) eklendi.
+           Şeker eklendi.
+           Su eklendi.
+           Karıştırılıyor...
+           Ana malzeme (kahve) eklendi.
            Şeker eklendi.
            Su eklendi.
            Karıştırılıyor...
@@ -54,12 +59,50 @@
 
         public override void PutMainMaterial()
         {
-            Console.WriteLine("Ana malzeme eklendi.");
+            Console.WriteLine("Ana malzeme (çay) eklendi.");
         }
 
         public override void Stir()
         {
             Console.WriteLine("Karıştırılıyor...");
+        }
+    }
+
+    class Coffee : Drink
+    {
+        public override void PutSugar()
+        {
+            Console.WriteLine("Şeker eklendi.");
+        }
+
+        public override void PutWater()
+        {
+            Console.WriteLine("Su eklendi.");
+        }
+
+        public override void PutMainMaterial()
+        {
+            Console.WriteLine("Ana malzeme (kahve) eklendi.");
+        }
+
+        public override void Stir()
+        {
+            Console.WriteLine("Karıştırılıyor...");
+        }
+    }
+
+    enum DrinkType
+    {
+        Tea, Coffee
+    }
+
+    class Automat
+    {
+        public Drink Prepare(DrinkType type)
+        {
+            Drink drink = type == DrinkType.Tea ? new Tea() : new Coffee();
+            drink.Prepare();
+            return drink;
         }
     }
 }
