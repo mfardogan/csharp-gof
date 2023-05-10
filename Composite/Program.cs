@@ -35,11 +35,11 @@
             /*
 
 ############################
-# Computer         #
+#         Computer         #
 #             *            #
 #           *   *          #
 #         *       *        #
-# Harware   Software    # 
+#   Harware    Software    # 
 #        *                 #
 #      *   *               #
 #   *        *             #
